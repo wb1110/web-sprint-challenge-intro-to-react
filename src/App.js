@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
-import Character from './components/Character';
 import Characters from './components/Characters';
+import styled from 'styled-components';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -21,11 +21,15 @@ const [char, setChar] = useState();
     })
   }, []);
 
-
+const Header = styled.h1`
+  font-family: 'Monoton', cursive;
+  color: black;
+  font-size: 5rem;
+`;
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <Header className="Header">REACT WARS</Header>
       {char ? <Characters char={char}/> : null}
     </div>
   );
