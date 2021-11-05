@@ -81,5 +81,8 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 A Javascript library that makes creating reusable components easier.
 1. Describe component state.
+An object that holds some information that may change over the lifetime of the component.
 1. Describe props.
+Properties passed from one component to another component.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+Any application state change that is observable outside the called function other than its return value. Put the changes in state or props within the react hook useEffect().
