@@ -1,13 +1,15 @@
 // Write your Character component here
 import React from 'react';
+import Characters from './Characters';
 
 const Character = (props) => {
-    const character = props;
-    
+    const newCharacter = props;
+
     return (
-        <h1>
-            'Hellow World';
-        </h1>
+        <div>
+            <h2>{newCharacter.name}</h2>
+
+        </div>
     );
 };
 
